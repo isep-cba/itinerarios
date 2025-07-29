@@ -13,37 +13,44 @@ html {
   padding: none;
 
   --color1: white;
-  --color2: lightgray;
-  --color3: brown;
-  --color4: lightblue;
-  --color5: beige;
+  --color2: rgb(226, 207, 124);
+  --color3: rgb(27, 18, 18);
+  --color4: rgb(138, 217, 243);
+  --color5: rgb(241, 178, 83);
 }
 
 a, p, h1, h2, h3 {
   color: var(--color1);
 }
 
-li {
-  list-style-type: none;
-}
 
-li:hover {
-  color: var(--color4);
+
+@keyframes crece {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }    
 }
 
 @keyframes aparece {
     from {
         opacity: 0;
-        transform: scale(0.5);
     }
     to {
         opacity: 1;
-        transform: scale(1);
     }    
 }
 
-.animado {
+.aparece {
     animation: aparece 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.crece {
+    animation: crece 5s linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
@@ -104,20 +111,116 @@ section {
 .foto-container img {
   width: 600px;
   max-width: 100%;
-  animation: aparece 5s linear;
+  animation: crece 5s linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
 }
 
 
+
+
+@media only screen and (min-width: 601px) {
 nav {
     position: fixed;
-    top: 50%;
-    transform-origin: 0% -150%;
-    right: 20px;
-    color: black;
+    bottom: 50%;
+    right: 0px;
     z-index: 2;
+    max-height: 60vh;
+    font-size: smaller;
 }
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+li {
+  border-bottom:1px solid var(--color1);
+  opacity: 0.6;
+}
+
+
+li a {
+  display: block;
+  color: var(--color1);
+  text-align: right;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+li:hover {
+  opacity: 1;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    position: fixed;
+    bottom: 0px;
+    z-index: 2;
+    width: 100%;
+    font-size: smaller;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--color3);
+  display: flex;
+  gap: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  border-right: 1px solid var(--color5);
+}
+
+li:first-child {
+  border-left: 1px solid var(--color1);
+}
+
+li a {
+  display: block;
+  color: var(--color1);
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+
+}
+
 
 .bg-parallax {
   background-attachment: fixed;
