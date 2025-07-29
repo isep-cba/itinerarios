@@ -78,9 +78,8 @@ section {
 @media only screen and (max-width: 600px) {
 
 section {
-    scroll-snap-align: start;
-    height: 100dvh;
-    max-height: 100dvh;
+    height: 95dvh;
+    max-height: 95dvh;
     width: 100%;
     padding: 0px;
     display: flex;
