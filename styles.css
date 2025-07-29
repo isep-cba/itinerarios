@@ -60,6 +60,8 @@ body {
     padding: 0;
 }
 
+@media only screen and (min-width: 601px) {
+
 section {
     scroll-snap-align: start;
     height: 100dvh;
@@ -70,6 +72,23 @@ section {
     justify-content: center;
     overflow-x: hidden;
 }
+}
+
+@media only screen and (max-width: 600px) {
+
+section {
+    scroll-snap-align: start;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+}
+
+
 
 .container {
   max-width: 80%;
