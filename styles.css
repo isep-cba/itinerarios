@@ -190,6 +190,7 @@ ul {
   display: flex;
   gap: 0;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -217,10 +218,11 @@ li a:hover:not(.active) {
 .active {
   background-color: #04AA6D;
 }
-
-
 }
 
+video {
+  width: 100%;
+}
 
 .bg-parallax {
   background-attachment: fixed;

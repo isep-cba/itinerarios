@@ -38,9 +38,10 @@
             <div class="column-container">
                 <h1>Video</h1>
                 <p>Hola, acá va un video</p>
-                <iframe style="width: 540px; height: 300px; max-width: 100%;" src="https://www.youtube.com/embed/RCcQ0N93DwM?si=aurAQUEZQg36lh0E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <a href="https://www.youtube.com/watch?v=RCcQ0N93DwM"><p>Mirar el documental completo</p></a>
-                
+                <video controls class="audioscroll">
+                    <source src="multimedia/intro.mp4">
+                </video>
+                <a href="https://www.youtube.com/watch?v=RCcQ0N93DwM">Mirar el documental completo</a>
             </div>
         </div>
     </section>
@@ -89,7 +90,10 @@
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore dolores molestiae ut nemo, laudantium facere iste earum dicta ab, tempora magni optio aut fugit, eos accusantium minima excepturi repellat. Impedit.
                 </p>
-                <iframe width="100%" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1796368471&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/itinerarios-en-el-tiempo" title="Itinerarios en el tiempo" target="_blank" style="color: #cccccc; text-decoration: none;">Itinerarios en el tiempo</a> · <a href="https://soundcloud.com/itinerarios-en-el-tiempo/01-la-casa-del-diablo-1" title="01: La Casa Del Diablo" target="_blank" style="color: #cccccc; text-decoration: none;">01: La Casa Del Diablo</a></div>
+                <audio controls class="audioscroll">
+                    <source src="multimedia/intro.mp4" type="audio/mpeg">
+                    Tu navegador no reproduce este audio. Intenta con otro dispositivo.
+                </audio>
             </div>
         </div>
     </section>
@@ -112,5 +116,7 @@
         </div>
     </section>
 
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
