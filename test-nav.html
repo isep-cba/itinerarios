@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Residente Style Navigation</title>
+    <link rel="stylesheet" href="testa-nav.css">
+</head>
+<body>
+
+    <nav id="section-nav">
+        <!-- SVG container for our navigation elements -->
+        <!-- viewBox defines the coordinate system. Width 120 for labels, Height 280 for 7 sections. -->
+        <!-- preserveAspectRatio ensures it scales correctly within its container. -->
+        <svg viewBox="0 0 120 280" preserveAspectRatio="xMinYMin meet">
+            <!-- Main vertical line that connects the majority of the dots -->
+            <!-- Drawn slightly longer than the range of the dots for visual effect -->
+            <line x1="80" y1="20" x2="80" y2="260" stroke="#333" stroke-width="1.5" />
+
+            <!-- Specific branch line connecting "VÍDEO" position to "INTRO" position -->
+            <!-- Coordinates are relative to the SVG's viewBox -->
+            <line id="branch-line-video-intro" x1="80" y1="70" x2="95" y2="40" stroke="#666" stroke-width="1.5" class="nav-line-segment" />
+
+            <!-- Each <g> element represents a single navigation item (dot + label) -->
+            <!-- 'transform="translate(x, y)"' moves the entire group to its desired position -->
+            <!-- 'data-section' attribute links the nav item to a page section ID -->
+
+            <!-- Section 1: INTRO (The branched section) -->
+            <g class="nav-item" data-section="section1" transform="translate(80, 40)">
+                <circle class="nav-dot" r="4"></circle>
+                <!-- Label for INTRO, positioned relative to its group's origin (0,0 within the group) -->
+                <!-- x, y are offsets. text-anchor="end" aligns text to its right edge -->
+                <text class="nav-label" x="-20" y="-5" text-anchor="end">INTRO</text>
+            </g>
+
+            <!-- Section 2: VÍDEO (The main active section in the image, also the branching point) -->
+            <g class="nav-item" data-section="section2" transform="translate(80, 70)">
+                <circle class="nav-dot" r="4"></circle>
+                <text class="nav-label" x="-15" y="5" text-anchor="end">VÍDEO</text>
+            </g>
+
+            <!-- Section 3 -->
+            <g class="nav-item" data-section="section3" transform="translate(80, 105)">
+                <circle class="nav-dot" r="4"></circle>
+                <text class="nav-label" x="-15" y="5" text-anchor="end">Section 3</text>
+            </g>
+
+            <!-- Section 4 -->
+            <g class="nav-item" data-section="section4" transform="translate(80, 140)">
+                <circle class="nav-dot" r="4"></circle>
+                <text class="nav-label" x="-15" y="5" text-anchor="end">Section 4</text>
+            </g>
+
+            <!-- Section 5 -->
+            <g class="nav-item" data-section="section5" transform="translate(80, 175)">
+                <circle class="nav-dot" r="4"></circle>
+                <text class="nav-label" x="-15" y="5" text-anchor="end">Section 5</text>
+            </g>
+
+            <!-- Section 6 -->
+            <g class="nav-item" data-section="section6" transform="translate(80, 210)">
+                <circle class="nav-dot" r="4"></circle>
+                <text class="nav-label" x="-15" y="5" text-anchor="end">Section 6</text>
+            </g>
+
+            <!-- Section 7 -->
+            <g class="nav-item" data-section="section7" transform="translate(80, 245)">
+                <circle class="nav-dot" r="4"></circle>
+                <text class="nav-label" x="-15" y="5" text-anchor="end">Section 7</text>
+            </g>
+
+        </svg>
+    </nav>
+
+    <main>
+        <section id="section1" class="page-section">
+            <h2>Section 1: INTRO</h2>
+            <p>This is the introductory section, the beginning of the journey.</p>
+            <div style="height: 600px; background-color: #f0f0f0; display: flex; align-items: center; justify-content: center;">Scroll down</div>
+        </section>
+
+        <section id="section2" class="page-section">
+            <h2>Section 2: VÍDEO</h2>
+            <p>A central point, perhaps featuring a video or a key moment.</p>
+            <div style="height: 600px; background-color: #e0e0e0; display: flex; align-items: center; justify-content: center;">Scroll down</div>
+        </section>
+
+        <section id="section3" class="page-section">
+            <h2>Section 3: Content Title 3</h2>
+            <p>More details about the journey.</p>
+            <div style="height: 600px; background-color: #d0d0d0; display: flex; align-items: center; justify-content: center;">Scroll down</div>
+        </section>
+
+        <section id="section4" class="page-section">
+            <h2>Section 4: Content Title 4</h2>
+            <p>Continuing the narrative.</p>
+            <div style="height: 600px; background-color: #c0c0c0; display: flex; align-items: center; justify-content: center;">Scroll down</div>
+        </section>
+
+        <section id="section5" class="page-section">
+            <h2>Section 5: Content Title 5</h2>
+            <p>Another chapter unfolds.</p>
+            <div style="height: 600px; background-color: #b0b0b0; display: flex; align-items: center; justify-content: center;">Scroll down</div>
+        </section>
+
+        <section id="section6" class="page-section">
+            <h2>Section 6: Content Title 6</h2>
+            <p>Almost there, final stretch.</p>
+            <div style="height: 600px; background-color: #a0a0a0; display: flex; align-items: center; justify-content: center;">Scroll down</div>
+        </section>
+
+        <section id="section7" class="page-section">
+            <h2>Section 7: Content Title 7</h2>
+            <p>The journey's end, a complete story.</p>
+            <div style="height: 600px; background-color: #909090; display: flex; align-items: center; justify-content: center;">End of page</div>
+        </section>
+    </main>
+
+    <script src="test-nav.js"></script>
+</body>
+</html>

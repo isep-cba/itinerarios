@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* A common sans-serif font */
+    line-height: 1.6;
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+    background-color: #333; /* Dark background to match the image */
+    color: #eee; /* Light text color for main content */
+}
+
+/* Main content styling */
+main {
+    padding-right: 150px; /* Space for the fixed navigation on the right */
+    padding-left: 50px;
+}
+
+.page-section {
+    min-height: 100vh; /* Make sections full viewport height for distinct scrolling */
+    padding: 80px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #444; /* Subtle dark separator between sections */
+}
+
+.page-section:last-child {
+    border-bottom: none; /* No border on the last section */
+}
+
+h2 {
+    color: #fff; /* White headings */
+    font-size: 2em;
+}
+
+p {
+    max-width: 800px; /* Limit paragraph width for readability */
+}
+
+/* Navigation menu container styling */
+#section-nav {
+    position: fixed; /* Keep it in view while scrolling */
+    right: 20px; /* Distance from the right edge of the viewport */
+    top: 50%; /* Vertically center */
+    transform: translateY(-50%); /* Adjust for perfect vertical centering */
+    z-index: 1000; /* Ensure it's above other content */
+    width: 120px; /* Max width of the SVG (enough for labels and branch) */
+    height: 280px; /* Max height of the SVG (enough for all sections) */
+}
+
+#section-nav svg {
+    width: 100%; /* Make SVG fill its container */
+    height: 100%;
+    overflow: visible; /* Allows elements to extend beyond the SVG's initial box if needed (e.g., hover effects) */
+}
+
+/* Styling for all <line> elements within the SVG */
+line {
+    stroke: #666; /* Light grey color for lines */
+    stroke-width: 1.5px;
+    transition: stroke 0.3s ease; /* Smooth transition for line color changes */
+}
+
+/* Styling for each navigation item group */
+.nav-item {
+    cursor: pointer; /* Indicate interactivity */
+}
+
+/* Styling for the circular dots */
+.nav-dot {
+    fill: white; /* Default white dot */
+    stroke: none; /* No border by default */
+    transition: all 0.3s ease; /* Smooth transitions for radius, fill, stroke */
+}
+
+/* Styling for the text labels */
+.nav-label {
+    fill: #888; /* Dimmed default color for text */
+    font-size: 10px; /* Smaller font as in the image */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Arial Narrow', sans-serif; /* A font similar to the image's text */
+    opacity: 0; /* Hidden by default */
+    pointer-events: none; /* Ensures clicks go through to the dot/group, not blocked by text */
+    transition: fill 0.3s ease, opacity 0.3s ease; /* Smooth transitions for text color and visibility */
+}
+
+/* ACTIVE STATES */
+
+/* When a nav-item group has the 'active' class */
+.nav-item.active .nav-dot {
+    fill: transparent; /* Makes the dot hollow */
+    stroke: white; /* Adds a white border */
+    stroke-width: 2px;
+    r: 8px; /* Makes the dot larger (the animation) */
+}
+
+/* Special styling for the 'INTRO' dot when its section is active */
+.nav-item[data-section="section1"].active .nav-dot {
+    fill: white; /* The INTRO dot is solid white and slightly larger when active */
+    r: 5px; /* Slightly larger than default, but not hollow like VÍDEO */
+}
+
+/* Shows labels for active items */
+.nav-item.active .nav-label {
+    opacity: 1; /* Make text visible */
+    fill: white; /* White text color */
+}
+
+/* Special handling for the branch line when VÍDEO is active */
+/* The JS will change this line's stroke, but this ensures it matches the active color */
+line.active-branch-line {
+    stroke: white;
+}
+
+/* When the 'VÍDEO' section is active, the 'INTRO' section's elements should also be visually 'activated' */
+/* This happens via a class added by JS. The INTRO dot remains solid. */
+.nav-item.active-branch-related .nav-dot {
+    fill: white; /* Solid white */
+    r: 5px; /* Slightly larger */
+}
+.nav-item.active-branch-related .nav-label {
+    opacity: 1; /* Show text */
+    fill: white; /* White text */
+}
+
+
+/* HOVER EFFECTS */
+
+/* General hover for dots (if not active) */
+.nav-item:hover .nav-dot {
+    fill: #ccc; /* Slightly lighter dot on hover */
+}
+
+/* General hover for labels (if not active) */
+.nav-item:hover .nav-label {
+    opacity: 0.7; /* Slightly visible label on hover */
+    fill: #ccc;
+}
+
+/* Ensure active styles persist on hover (override general hover) */
+.nav-item.active:hover .nav-dot {
+    fill: transparent;
+    stroke: white;
+    stroke-width: 2px;
+    r: 8px;
+}
+.nav-item.active:hover .nav-label {
+    opacity: 1;
+    fill: white;
+}
+
+/* For the INTRO dot when it's active-branch-related */
+.nav-item.active-branch-related:hover .nav-dot {
+    fill: white;
+    r: 5px;
+}
+.nav-item.active-branch-related:hover .nav-label {
+    opacity: 1;
+    fill: white;
+}
