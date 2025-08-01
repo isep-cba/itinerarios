@@ -49,12 +49,10 @@ audioscroll.forEach(audioscroll => {
 });
 
 
+/* BOTON FULLSCREEN */
 
-
-/* Get the documentElement (<html>) to display the page in fullscreen */
 var elem = document.documentElement;
 
-/* View in fullscreen */
 function openFullscreen() {
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
@@ -65,13 +63,21 @@ function openFullscreen() {
   }
 }
 
-/* Close fullscreen */
-function closeFullscreen() {
-  if (document.exitFullscreen) {
-    document.exitFullscreen();
-  } else if (document.webkitExitFullscreen) { /* Safari */
-    document.webkitExitFullscreen();
-  } else if (document.msExitFullscreen) { /* IE11 */
-    document.msExitFullscreen();
-  }
-}
+/* PRUEBAS MAPA */
+
+var map = L.map('map', {
+    crs: L.CRS.Simple,
+    minZoom: -1
+});
+
+
+var bounds = [[0,0], [1551,1142]];
+var image = L.imageOverlay('img/mapa-cordoba.jpg', bounds).addTo(map);
+
+map.fitBounds(bounds);
+
+
+var marker = L.marker([998, 485]).addTo(map);
+marker.bindPopup("    <img src='img/fotos/03.jpg' style='width: 100%;'><b>Escuela Normal Alejandro Carbó</b><br>Av. Colón 2000. Aquí fue la primera escuela normal, donde dio clases Jennie Howard.").openPopup();
+
+

@@ -23,7 +23,35 @@ a, p, h1, h2, h3 {
   color: var(--color1);
 }
 
+/* BOTÓN FULLSCREEN */
 
+#fullscreenbutton {
+    background-color: #22222277;
+    padding: 5px;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+#fullscreenbutton:hover {
+    background-color: #222222dd;
+    transform: scale(1.1);
+}
+
+@media only screen and (min-width: 1200px){
+    #fullscreenbutton {
+      display: none;
+    }
+  }
+
+:fullscreen #fullscreenbutton {
+  display: none;
+}
 
 @keyframes crece {
     from {
@@ -261,6 +289,7 @@ video {
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
 }
 
+
 #inicio {
   background-image: url(img/fondos/salon.jpg);
 }
@@ -288,3 +317,11 @@ video {
 #cierre {
   background-image: url(img/fondos/fondo-creditos.jpg);
 }
+
+
+/* MAPA */
+
+#map { height: 80%; width:80%; }
+
+
+
