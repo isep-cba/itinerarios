@@ -14,7 +14,7 @@ const audioscroll = document.querySelectorAll(".audioscroll");
 
 
 const options = {
-    root: document.querySelector("#scrollArea"),
+    root: null,
     rootMargin: "-40px",
     threshold: 0.6,
 };
