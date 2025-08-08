@@ -1,8 +1,94 @@
+/* FUENTES */
+
+@font-face {
+	font-family:"alegre";
+	font-style:normal;
+	font-weight:400;
+	src: url("fonts/Alegreya-Regular.ttf");
+}
+
+@font-face {
+	font-family:"alegre-medium";
+	font-style:normal;
+	font-weight:500;
+	src: url("fonts/Alegreya-Medium.ttf");
+}
+
+@font-face {
+	font-family:"alegre-semibold";
+	font-style:normal;
+	font-weight:600;
+	src: url("fonts/Alegreya-SemiBold.ttf");
+}
+
+@font-face {
+	font-family:"alegre-bold";
+	font-style:normal;
+	font-weight:bold;
+	src: url("fonts/Alegreya-Bold.ttf");
+}
+
+@font-face {
+	font-family:"alegre-extrabold";
+	font-style:normal;
+	font-weight:800;
+	src: url("fonts/Alegreya-ExtraBold.ttf");
+}
+
+@font-face {
+	font-family:"alegre-black";
+	font-style:normal;
+	font-weight:bolder;
+	src: url("fonts/Alegreya-Black.ttf");
+}
+
+
+@font-face {
+	font-family:"alegre-regular-italic";
+	font-style:italic;
+	font-weight:400;
+	src: url("fonts/Alegreya-Italic.ttf");
+}
+
+@font-face {
+	font-family:"alegre-medium-italic";
+	font-style:italic;
+	font-weight:500;
+	src: url("fonts/Alegreya-MediumItalic.ttf");
+}
+
+@font-face {
+	font-family:"alegre-semibold-italic";
+	font-style:italic;
+	font-weight:600;
+	src: url("fonts/Alegreya-SemiBoldItalic.ttf");
+}
+
+@font-face {
+	font-family:"alegre-bold-italic";
+	font-style:italic;
+	font-weight:bold;
+	src: url("fonts/Alegreya-BoldItalic.ttf");
+}
+
+@font-face {
+	font-family:"alegre-extrabold-italic";
+	font-style:italic;
+	font-weight:800;
+	src: url("fonts/Alegreya-ExtraBoldItalic.ttf");
+}
+
+@font-face {
+	font-family:"alegre-black-italic";
+	font-style:italic;
+	font-weight:bolder;
+	src: url("fonts/Alegreya-BlackItalic.ttf");
+}
+
 
 
 * {
     margin: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html {
@@ -11,18 +97,15 @@ html {
   scroll-snap-stop: always;
   scroll-snap-align: start;
   padding: none;
-
-  --color1: white;
-  --color2: rgb(226, 207, 124);
-  --color3: rgb(27, 18, 18);
-  --color4: rgb(138, 217, 243);
-  --color5: rgb(241, 178, 83);
 }
 
 body {
     margin: 0;
     padding: 0;
+    font-family: alegre;
 }
+
+.sans-serif {font-family: "alegre"; font-weight: 100;}
 
 main {
   height: 100dvh;
@@ -81,6 +164,14 @@ a, p, h1, h2, h3 {
     }    
 }
 
+    *::-webkit-scrollbar {
+        display: none;
+    }
+
+        * {
+        -ms-overflow-style: none; /* IE and Edge */
+    }
+
 .aparece {
     animation: aparece 5s linear;
     animation-timeline: view();
@@ -106,6 +197,11 @@ section {
     overflow-x: hidden;
 }
 
+iframe {
+  width: 100%; 
+  height: 100%;
+  border: none;
+}
 
 .container {
   max-width: 80%;
@@ -180,7 +276,7 @@ ul {
 }
 
 li {
-  border-bottom:1px solid var(--color1);
+  border-bottom:1px solid var(--color3);
   opacity: 0.6;
 }
 
@@ -198,11 +294,7 @@ li:hover {
 }
 
 li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.active {
-  background-color: #04AA6D;
+  background-color: var(--color5);
 }
 
 
@@ -232,11 +324,11 @@ ul {
 }
 
 li {
-  border-right: 1px solid var(--color5);
+  border-right: 1px solid var(--color2);
 }
 
 li:first-child {
-  border-left: 1px solid var(--color1);
+  border-left: 1px solid var(--color2);
 }
 
 li a {
@@ -251,9 +343,6 @@ li a:hover:not(.active) {
   background-color: #111;
 }
 
-.active {
-  background-color: #04AA6D;
-}
 }
 
 video {
@@ -316,5 +405,28 @@ video {
   width: 80%; 
 }
 
+#indice {
+  background-color: var(--color6); 
+}
+#indice p {
+  color: var(--color1)
+}
 
+#indice .column-container {
+    align-content: start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 1em;
+}
 
+#indice .column-container div h2 {
+    color: var(--color1);
+    font-size: large;
+}
+
+#indice .column-container h1 {
+    color: var(--color1);
+    font-size: 2em;
+}
