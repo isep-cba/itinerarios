@@ -5,25 +5,12 @@
     <title>Itinerarios en el tiempo</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="colores.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-     crossorigin=""/>
-     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-     crossorigin=""></script>
 </head>
 <body>
 
-<!-- BOTÓN FULLSCREEN -->
-    
-    <div id="fullscreenbutton">
-        <a href="javascript:openFullscreen();">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F3F3F3"><path d="M120-120v-320h80v184l504-504H520v-80h320v320h-80v-184L256-200h184v80H120Z"/></svg>
-        </a>
-    </div>
 
 
-        <section id="presentacion">
+        <section id="presentacion" style="background: url(img/fondos/textura-papel.jpg) no-repeat center; background-size: cover; margin: 0; padding: 0;">
             <div class="column-container">
                 <p>“Un viaje colaborativo donde docentes de Córdoba exploran la cartografía histórica de la Formación Docente y construyen la del presente, integrando saberes, experiencias, tecnología y territorio.”</p>
             </div>
@@ -32,7 +19,15 @@
             </div>
 
         </section>
+<!-- BOTÓN FULLSCREEN -->
 
 
+            <div id="fullscreenbutton">
+        <a href="javascript:openFullscreen();">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F3F3F3"><path d="M120-120v-320h80v184l504-504H520v-80h320v320h-80v-184L256-200h184v80H120Z"/></svg>
+        </a>
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
