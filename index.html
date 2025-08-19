@@ -13,27 +13,6 @@
      crossorigin=""></script>
 </head>
 <body>
-    <!-- MENU DE NAVEGACIÓN -->
-    <nav>
-        <ul>
-            <li><a href="#inicio" alt="inicio">Inicio</a></li>
-            
-            <li><a href="#video" alt="video">Video</a></li>
-
-            <li><a href="#mapa" alt="mapa">Mapa</a></li>
-
-            <li><a href="#fotos" alt="fotos">Fotos</a></li>
-            
-            <li><a href="#podcast" alt="podcast">Podcast</a></li>
-
-            <li><a href="#recorrido" alt="recorrido">Recorrido</a></li>
-
-            <li><a href="#cierre" alt="cierre">Cierre</a></li>
-
-            <li><a href="grilla.html" alt="materiales">Materiales</a></li>
-        </ul>
-    </nav>
-
 
 <!-- BOTÓN FULLSCREEN -->
     
@@ -43,95 +22,17 @@
         </a>
     </div>
 
-    <main id="scrollArea">
 
-    <!-- COMIENZAN LAS SECCIONES -->
-
-    <section id="inicio" class="bg-parallax">
-        <div class="column-container">
-            <h1>
-                El normalismo
-            </h1>
-            <h3>1880-1950</h3>
-        </div>
-    </section>
-
-    <section id="video" class="bg-fijo">
-        <div class="container">
+        <section id="presentacion">
             <div class="column-container">
-                <h1>Video</h1>
-                <p>Hola, acá va un video</p>
-                <video controls class="audioscroll">
-                    <source src="multimedia/intro.mp4">
-                </video>
-                <a href="https://www.youtube.com/watch?v=RCcQ0N93DwM">Mirar el documental completo</a>
+                <p>“Un viaje colaborativo donde docentes de Córdoba exploran la cartografía histórica de la Formación Docente y construyen la del presente, integrando saberes, experiencias, tecnología y territorio.”</p>
             </div>
-        </div>
-    </section>
-
-     <section id="mapa" class="bg-parallax">
-                <div id="map"></div>
-    </section>
-    
-    <section id="fotos" class="bg-fijo">
-        <div class="container">
-                <h1>
-                    Fotos
-                </h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore dolores molestiae ut nemo, laudantium facere iste earum dicta ab, tempora magni optio aut fugit, eos accusantium minima excepturi repellat. Impedit.
-                </p>
-            <div class="foto-container">
-                <img src="img/fotos/01.jpg" alt="">
-                <img src="img/fotos/02.jpg" alt="">
-                <img src="img/fotos/03.jpg" alt="">
-                <img src="img/fotos/04.jpg" alt="">
-                <img src="img/fotos/05.jpg" alt="">
-                <img src="img/fotos/06.jpg" alt="">
-                <img src="img/fotos/07.jpg" alt="">
-                <img src="img/fotos/08.jpg" alt="">
+            <div style="position: fixed; right: 50%; bottom: 20%;">
+                <a href="momento1.html" style="color: var(--color6);">Momento 1</a>
             </div>
-        </div>
-    </section>
 
-    <section id="podcast" class="bg-parallax">
-        <div class="container">
-            <div class="column-container aparece">
-                <h1>
-                    Podcast
-                </h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore dolores molestiae ut nemo, laudantium facere iste earum dicta ab, tempora magni optio aut fugit, eos accusantium minima excepturi repellat. Impedit.
-                </p>
-                <audio controls class="audioscroll">
-                    <source src="multimedia/intro.mp4" type="audio/mpeg">
-                    Tu navegador no reproduce este audio. Intenta con otro dispositivo.
-                </audio>
-            </div>
-        </div>
-    </section>
-    
-    <section id="recorrido">
-        <iframe name="myiFrame" src="360.html" scrolling="no" marginwidth="0" marginheight="0" style="border:0px none #ffffff;"></iframe>
-    </section>
+        </section>
 
-    <section id="cierre" class="bg-parallax">
-        <div class="container">
-            <div class="aparece">
-                <h1>
-                    Cierre
-                </h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore dolores molestiae ut nemo, laudantium facere iste earum dicta ab, tempora magni optio aut fugit, eos accusantium minima excepturi repellat. Impedit.
-                </p>
-                
-            </div>
-        </div>
-    </section>
-</main>
 
-    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
-
-    <script src="scripts.js"></script>
 </body>
 </html>

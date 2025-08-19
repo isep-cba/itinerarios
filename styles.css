@@ -430,3 +430,22 @@ video {
     color: var(--color1);
     font-size: 2em;
 }
+
+#presentacion {
+  background-color: var(--color1); 
+}
+
+#presentacion .column-container {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1em;
+    margin: 5em;
+    text-align: center;
+}
+
+#presentacion .column-container p {
+    color: var(--color3);
+}
