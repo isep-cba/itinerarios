@@ -36,13 +36,15 @@
 
     <a-scene>
       <a-assets>
-        <img id="0" crossorigin="anonymous" src="img/fotos/16.jpg">
-        <img id="1" crossorigin="anonymous" src="img/fotomontaje.jpg">
-        <img id="1-thumb" crossorigin="anonymous" src="img/fotomontaje.jpg">
-        <img id="2" crossorigin="anonymous" src="img/tira.jpg">
-        <img id="2-thumb" crossorigin="anonymous" src="img/tira.jpg">
-        <img id="3" crossorigin="anonymous" src="img/fotos/03.jpg">
-        <img id="3-thumb" crossorigin="anonymous" src="img/fotos/03.jpg">
+        <img id="0" crossorigin="anonymous" src="img/panoramas/actos.jpg">
+        <img id="1" crossorigin="anonymous" src="img/panoramas/biblio.jpg">
+        <img id="1-thumb" crossorigin="anonymous" src="img/panoramas/biblio-baja.jpg">
+        <img id="2" crossorigin="anonymous" src="img/panoramas/patio.jpg">
+        <img id="2-thumb" crossorigin="anonymous" src="img/panoramas/patio-baja.jpg">
+        <img id="3" crossorigin="anonymous" src="img/panoramas/pileta.jpg">
+        <img id="3-thumb" crossorigin="anonymous" src="img/panoramas/pileta-baja.jpg">
+        <img id="4" crossorigin="anonymous" src="img/panoramas/salon.jpg">
+        <img id="4-thumb" crossorigin="anonymous" src="img/panoramas/salon-baja.jpg">
         <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
       </a-assets>
 
@@ -59,16 +61,20 @@
               rotation="0 15 0"></a-text>
       </a-entity>
 
-      <a-entity id="links" layout="type: line; margin: 2.5" position="5 0 -5" rotation="0 -25 0">
+      <a-entity id="links" layout="type: line; margin: 2.5" position="4 0 -5" rotation="0 -45 0">
         <a-entity template="src: #link" data-src="#1" data-thumb="#1-thumb"></a-entity>
       </a-entity>
 
-      <a-entity id="links" layout="type: line; margin: 2.5" position="-5 0 0" rotation="0 90 0">
+      <a-entity id="links" layout="type: line; margin: 2.5" position="8 0 -5" rotation="0 -45 0">
         <a-entity template="src: #link" data-src="#2" data-thumb="#2-thumb"></a-entity>
       </a-entity>
 
-      <a-entity id="links" layout="type: line; margin: 2.5" position="0 0 5" rotation="0 180 0">
+      <a-entity id="links" layout="type: line; margin: 2.5" position="8 1.5 -5" rotation="0 -45 0">
         <a-entity template="src: #link" data-src="#3" data-thumb="#3-thumb"></a-entity>
+      </a-entity>
+
+      <a-entity id="links" layout="type: line; margin: 2.5" position="4 1.5 -5" rotation="0 -45 0">
+        <a-entity template="src: #link" data-src="#4" data-thumb="#4-thumb"></a-entity>
       </a-entity>
       
 
