@@ -1,0 +1,86 @@
+/* FUENTES */
+
+@font-face {
+	font-family:"bitter";
+	font-style:normal;
+	font-weight:400;
+	src: url("fonts/Bitter-Regular.ttf");
+}
+
+@font-face {
+	font-family:"bitter-medium";
+	font-style:normal;
+	font-weight:500;
+	src: url("fonts/Bitter-Medium.ttf");
+}
+
+@font-face {
+	font-family:"bitter-semibold";
+	font-style:normal;
+	font-weight:600;
+	src: url("fonts/Bitter-SemiBold.ttf");
+}
+
+@font-face {
+	font-family:"bitter-bold";
+	font-style:normal;
+	font-weight:bold;
+	src: url("fonts/Bitter-Bold.ttf");
+}
+
+@font-face {
+	font-family:"bitter-extrabold";
+	font-style:normal;
+	font-weight:800;
+	src: url("fonts/Bitter-ExtraBold.ttf");
+}
+
+@font-face {
+	font-family:"bitter-black";
+	font-style:normal;
+	font-weight:bolder;
+	src: url("fonts/Bitter-Black.ttf");
+}
+
+
+@font-face {
+	font-family:"bitter-regular-italic";
+	font-style:italic;
+	font-weight:400;
+	src: url("fonts/Bitter-Italic.ttf");
+}
+
+@font-face {
+	font-family:"bitter-medium-italic";
+	font-style:italic;
+	font-weight:500;
+	src: url("fonts/Bitter-MediumItalic.ttf");
+}
+
+@font-face {
+	font-family:"bitter-semibold-italic";
+	font-style:italic;
+	font-weight:600;
+	src: url("fonts/Bitter-SemiBoldItalic.ttf");
+}
+
+@font-face {
+	font-family:"bitter-bold-italic";
+	font-style:italic;
+	font-weight:bold;
+	src: url("fonts/Bitter-BoldItalic.ttf");
+}
+
+@font-face {
+	font-family:"bitter-extrabold-italic";
+	font-style:italic;
+	font-weight:800;
+	src: url("fonts/Bitter-ExtraBoldItalic.ttf");
+}
+
+@font-face {
+	font-family:"bitter-black-italic";
+	font-style:italic;
+	font-weight:bolder;
+	src: url("fonts/Bitter-BlackItalic.ttf");
+}

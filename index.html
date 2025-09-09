@@ -4,29 +4,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Itinerarios en el tiempo</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="colores.css">
+    <link rel="stylesheet" href="animations.css">
+
 </head>
 <body>
-
-
-
-        <section id="presentacion" style="background: url(img/fondos/fondo-puntos-cardinales.jpg) no-repeat center; background-size: cover; margin: 0; padding: 0;">
-            <div class="column-container">
-                <p style="font-size: x-large;">“Estás por entrar a un territorio conocido. El paisaje que un día elegiste transitar aqui se revela ante vos.
-                    <br>Quizás nunca lo viste de este modo, pero tus huellas ya habitan su suelo.
-                    <br>Recorrerlo será, también, redescubrirte.”</p>
-                    <a href="regiones.html" style="color: var(--color1); background-color: var(--color5); border-radius: 15px; padding: 0.5em 1em; text-decoration: none; font-weight: 700; font-size: large;">Comenzar</a>
+    <section id="presentacion" class="columnas">
+        <nav id="navbar">
+            <div>
+                <a id="isep" href="https://isep-cba.edu.ar/web/">ISEP</a>
             </div>
-           
-        </section>
-<!-- BOTÓN FULLSCREEN -->
-
-
-            <div id="fullscreenbutton">
-        <a href="javascript:openFullscreen();">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F3F3F3"><path d="M120-120v-320h80v184l504-504H520v-80h320v320h-80v-184L256-200h184v80H120Z"/></svg>
-        </a>
-    </div>
+            <div>
+                <a href="index.html">Inicio</a>
+                <a href="materiales.html">Materiales</a>
+                <a href="acercade.html">Acerca de</a>
+                <a href="javascript:openFullscreen();">Pantalla completa</a>
+            </div>
+        </nav>
+        <div>
+            <img src="img/logo.png" class="fadein" alt="">
+        </div>
+        <div class="fadein2">
+           <p>“Estás por entrar a un territorio conocido. El paisaje que un día elegiste transitar aqui se revela ante vos. Quizás nunca lo viste de este modo, pero tus huellas ya habitan su suelo. Recorrerlo será, también, redescubrirte.”</p>
+        </div>
+        <div class="fadein2">
+           <a class="boton marron" href="regiones.html">Comenzar</a>
+        </div>
+    </section>
 
     <script src="scripts.js"></script>
 </body>
