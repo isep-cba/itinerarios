@@ -13,7 +13,7 @@ function openFullscreen() {
   }
 }
 
-/* NAVBAR  hide/show on scroll
+/* NAVBAR  hide/show on scroll 
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {

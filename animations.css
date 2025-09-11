@@ -1,9 +1,29 @@
-    @keyframes fadeIn {
-      from {
+    @keyframes fadeIn2 {
+      0% {
         opacity: 0;
       }
-      to {
+      50% {
+        opacity: 0;
+      }
+      100% {
         opacity: 1;
+      }
+    }
+
+
+      @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      25% {
+        opacity: 1;
+      }
+      80% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+        visibility: hidden;
       }
     }
 
@@ -25,10 +45,17 @@
 
     .fadein {
       animation-name: fadeIn;
-      animation-duration: 2s;
+      opacity: 0; /* Start invisible */
+      animation: fadeIn 6s ease-in-out forwards;
     }
 
+
     .fadein2 {
-      animation-name: fadeIn;
-      animation-duration: 5s;
+      animation-name: fadeIn2;
+      animation-duration: 10s;
+    }
+
+    .fadein3 {
+      animation-name: fadeIn2;
+      animation-duration: 13s;
     }
