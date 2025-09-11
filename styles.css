@@ -414,8 +414,8 @@ video {
     #diapotexto .link {
         color: var(--color5);
         text-align: left;
-        line-height: 1.5em;
-        padding-left: 0.5em;
+        line-height: 2em;
+        padding-left: 0em;
         transition: 0.3s;
 
    }
