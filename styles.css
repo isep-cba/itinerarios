@@ -116,7 +116,9 @@ section {
 
     #presentacion-texto p {
         text-align: center;
+        font-size: large;
         line-height: 1.5em;
+        margin-bottom: 0.8em;
     }
 
 #presentacion {
@@ -511,8 +513,17 @@ video {
 
 /* MAPA */
 
+#contenedor-mapa {
+/*    background-image: url(img/mapa-cordoba.jpg); */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    background-color: antiquewhite;
+}
+
 #map { 
-  height: 100%;
-  max-height: 100vh; 
-  width: 100%; 
+  height: 90%;
+  max-height: 90vh; 
+  width: 80%; 
 }

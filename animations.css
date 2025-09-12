@@ -36,26 +36,11 @@
       }
     }
 
-    @keyframes slideAndFade {
-      0% {
-        transform: translateX(0);
-        opacity: 0;
-      }
-      50% {
-        transform: translateX(50px);
-        opacity: 0.5;
-      }
-      100% {
-        transform: translateX(100px);
-        opacity: 1;
-      }
-    }
-
 
     .fadeinout {
       animation-name: fadeInOut;
       opacity: 0; /* Start invisible */
-      animation: fadeIn 6s ease-in-out forwards;
+      animation: fadeInOut 6s ease-in-out forwards;
     }
 
     .fadein {
