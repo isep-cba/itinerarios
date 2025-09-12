@@ -36,6 +36,7 @@ section {
     max-height: 100%;
     width: 100%;
     padding: 0px;
+    position: relative;
 }
 
 .columnas {
@@ -155,7 +156,7 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  z-index: 2;
+  z-index: 9;
 }
 
 #navbar div {
@@ -247,6 +248,7 @@ section {
 
 
 .media-section {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -256,7 +258,9 @@ section {
 .encabezado {
   background-color: var(--color4); 
   top: 0; 
+  left: 0;
   width: 100%; 
+  z-index: 8;
   transition: top 0.3s; 
   display: flex;
   flex-direction: row;
@@ -264,7 +268,22 @@ section {
   align-items: center;
   flex-basis: 100px;
   padding-top: 50px;
+}
 
+.encabezado-degradado {
+    position: absolute;
+    top: 0;
+    z-index: 4;
+    background: linear-gradient(#000000FF, #000000FF, #000000aa, #00000000); 
+    padding-bottom: 3em;
+    top: 0; 
+    width: 100%; 
+    transition: top 0.3s; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
 }
 
 .encabezado div {
@@ -281,6 +300,20 @@ section {
 }
 
 .encabezado p {
+    color: white;
+    text-align: left;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.encabezado-degradado h2 {
+    color: white;
+    text-align: left;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.encabezado-degradado p {
     color: white;
     text-align: left;
     padding: 15px;
@@ -320,6 +353,7 @@ section {
 }
 
 video {
+    padding-top: 4em;
     height: 80vh;
     width: 100%;
 }
