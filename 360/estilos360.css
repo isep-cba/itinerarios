@@ -1,0 +1,71 @@
+body {
+    color: black;
+    font-family: "bitter";
+}
+
+nav {
+    position: absolute;
+    left: 50%;
+    bottom: 3%;
+    transform: translate(-50%, -0%);
+    z-index: 2;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    padding: 2em;
+    gap: 1em;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: var(--color3);
+    padding: 0.5em 1.5em;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    background-color: var(--color2);
+    transition: 0.5s;
+}
+
+#texto-intro {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    z-index: 2;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.media-box {
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    width: 400px;
+    max-width: 40vw;
+    padding: 2em;
+    z-index: 2;
+    text-align: center;
+    background-color: #000000aa;
+    color: white;
+    border-radius: 25px;
+    max-height: 60vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    text-align: left;
+}
+
+a {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+

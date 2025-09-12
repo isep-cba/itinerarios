@@ -1,0 +1,36 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+    <link rel="stylesheet" href="../fonts.css">
+    <link rel="stylesheet" href="../colores.css">
+    <link rel="stylesheet" href="estilos360.css">
+
+</head>
+<body>
+  <nav>
+    <a href="index.html">Ingreso</a>
+    <a href="pileta.html">Pileta</a>
+    <a href="salon.html">Salón de actos</a>
+    <a href="biblioteca.html">Biblioteca</a>
+    <a href="Patio.html">Patio</a>
+  </nav>
+  <div id="texto-intro">
+    <p>
+      Cada espacio del Garzón Agulla
+      <br>
+      guarda algo nuevo a descubrir
+      <br>
+      sobre el Escolanovismo 
+    </p>
+  </div>
+<a-scene>
+  <a-assets>
+    <img id="panorama" src="360-hall-ingreso-marron.jpg" crossorigin />
+  </a-assets>
+  <a-sky src="#panorama" rotation="0 -90 0"></a-sky>
+</a-scene>
+</body>
+</html> 
