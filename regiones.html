@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="colores.css">
     <link rel="stylesheet" href="animations.css">
+    <script src="map.js"></script>
 
 </head>
 <body>
@@ -23,17 +24,65 @@
             </div>
         </nav>
         <div id="regiones">
-            <div class="fadein ad1">
-                <a href="region1.html"><img src="img/region1.png" alt=""></a>
-            </div>
-            <div class="inhabilitado fadein ad2">
-                <a href=""><img src="img/region2.png" alt=""></a>
-            </div>
-            <div class="inhabilitado fadein ad2">
-                <a href=""><img src="img/region3.png" alt=""></a>
-            </div>
+
+            <button id="openModal1" class="btn-region fadein ad1"><img id="openModal1" src="img/region1.png" alt=""></button>
+            <button id="openModal2" class="btn-region inhabilitado fadein ad2"><img id="openModal2" src="img/region2.png" alt=""></button>
+            <button id="openModal3" class="btn-region inhabilitado fadein ad3"><img id="openModal3" src="img/region3.png" alt=""></button>
+
         </div>
     </section>
-    <script src="scripts.js"></script>
+
+    
+            <!-- Modal 1 -->
+            <div id="myModal1" class="modal">
+                <div class="modal-overlay"></div>
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <img src="img/region1.png" alt="">
+                    <div>
+                        <h2><span>Itinerario:</span> Institucionalización y expansión</h2>
+                        <p>Fines de siglo XIX hasta mediados de siglo XX</p>
+                        <a class="boton marron" href="region1.html">Comenzar</a>
+
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Modal 2 -->
+            <div id="myModal2" class="modal">
+                <div class="modal-overlay"></div>
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <img src="img/region2.png" alt="">
+                    <div>
+                        <h2><span>Itinerario:</span> Reconfiguración</h2>
+                        <p>Mediados de siglo XX hasta fines de siglo XX</p>
+                        <a class="boton marron" href="#">Próximamente</a>
+
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Modal 3 -->
+            <div id="myModal3" class="modal">
+                <div class="modal-overlay"></div>
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <img src="img/region3.png" alt="">
+                    <div class="contenido-modal">
+                        <h2><span>Itinerario:</span> Nueva reconfiguración</h2>
+                        <p>	Principios de siglo XXI  hasta la actualidad</p>
+                        <a class="boton marron" href="#">Próximamente</a>
+
+                    </div>
+                    
+                </div>
+            </div>
+        
+        <script src="modales.js"></script>
+        <script src="scripts.js"></script>
+
 </body>
 </html>
