@@ -32,9 +32,9 @@ window.onscroll = function() {
 
 */
 
+/* 
 
-
-// Pruebas de audio automatico con scroll
+// Audio automatico con scroll
 const body = document.getElementById(".body");
 const audioscroll = document.querySelectorAll(".audioscroll");
 
@@ -74,3 +74,4 @@ audioscroll.forEach(audioscroll => {
     observer.observe(audioscroll);
 });
 
+*/
