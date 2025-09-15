@@ -1,0 +1,43 @@
+<html lang="es">
+  <head>
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="utf-8">
+    <title>Galeria Imagen</title>
+    <meta name="description" content="Galeria 360">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@5/dist/aframe-event-set-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-layout-component@5.3.0/dist/aframe-layout-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-template-component@3.2.1/dist/aframe-template-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-proxy-event-component@2.1.0/dist/aframe-proxy-event-component.min.js"></script>
+    <link rel="stylesheet" href="../fonts.css">
+    <link rel="stylesheet" href="../colores.css">
+    <link rel="stylesheet" href="../animations.css">
+    <link rel="stylesheet" href="estilos360.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Ingreso</a>
+    <a href="pileta.html">Pileta</a>
+    <a href="salon.html">Salón de actos</a>
+    <a class="current" href="#">Biblioteca</a>
+    <a href="Patio.html">Patio</a>
+  </nav>
+  <div class="media-box fadein ad2">
+    <p>
+      Tomate un tiempo para leer: este cuaderno desarrolla los debates pedagógicos que atravesaron la formación docente entrado el siglo XX, los cuales marcaron un nuevo momento de modernizaciones en un ciclo de expansión.  También, describe el escenario cordobés de la formación docente haciendo foco en una experiencia clave de la década del ’40: la Escuela Normal Superior de Córdoba.
+    </p>
+      <div class="enlace-mediabox">
+        <img src="../img/icon-pdf.png" alt="">
+        <a class="boton beige" href="#">Descargá el cuaderno completo</a>
+      </div>
+  </div>
+
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+<a-scene>
+  <a-assets>
+    <img id="panorama" src="360-biblioteca.jpg" crossorigin />
+  </a-assets>
+  <a-sky src="#panorama" rotation="0 -90 0"></a-sky>
+</a-scene>
+</body>
+</html>
