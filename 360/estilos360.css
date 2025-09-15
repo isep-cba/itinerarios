@@ -124,3 +124,35 @@ audio {
     cursor: default;
 }
 
+
+
+#estampilla3 {
+    position: absolute;
+    top: 14%;
+    right: 5%;
+    width: 200px;
+    max-width: 30vw;
+    z-index: 5;
+    transform: rotate(15deg);
+    opacity: 0.8;
+}
+
+#estampilla3 {
+    transition: transform 0.25s ease;
+    cursor: zoom-in;
+}
+
+img {
+      transition: transform 0.25s ease;
+}
+
+img.zoomed {
+  cursor: zoom-out;
+  z-index: 999 !important;
+  opacity: 1 !important;
+  position: fixed !important;
+  translate: -50% -50% !important;
+  top: 50% !important;
+  left: 50% !important;
+  transition: transform 0.25s ease;
+}

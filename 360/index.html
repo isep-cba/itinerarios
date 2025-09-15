@@ -15,8 +15,9 @@
     <a href="pileta.html">Pileta</a>
     <a href="salon.html">Salón de actos</a>
     <a href="biblioteca.html">Biblioteca</a>
-    <a href="Patio.html">Patio</a>
+    <a href="patio.html">Patio</a>
   </nav>
+  <img id="estampilla3" class="estampilla-zoom" src="../img/estampilla-laica.png" alt="">
   <div id="texto-intro">
     <p>
       Cada espacio del Garzón Agulla
@@ -37,5 +38,20 @@
   </a-assets>
   <a-sky src="#panorama" rotation="0 -90 0"></a-sky>
 </a-scene>
+
+<script>
+  document.querySelectorAll('.estampilla-zoom').forEach(i => {
+  i.addEventListener('click', evt => {
+    if (i.classList.contains('zoomed'))
+      i.style.transform = ''
+    else {
+      const myScale = 500 / i.clientWidth
+      i.style.transform = `scale(${myScale})`
+    }
+    i.classList.toggle('zoomed')
+  })
+})
+</script>
+
 </body>
 </html> 
