@@ -61,7 +61,6 @@ section {
     border-radius: 2em;
     text-decoration: none;
     padding: 0.5em 2em;
-    align-self: center; 
     text-align: center;
     transition: 0.5s;
 }
@@ -382,7 +381,7 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 15px;
+  padding: 10px;
 }
 
 .pie-de-seccion h2, p {
@@ -433,7 +432,6 @@ video {
     }
 
 .pie-material {
-    margin-top: 1em;
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -598,6 +596,64 @@ video {
     align-items: center;
     gap: 2em;
     }
+
+
+.fondo-final {
+    background-color: var(--color3);
+    padding-top: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    scrollbar-width: none;
+    gap: 1em;
+    }
+
+    .container-final {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .texto-final {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: flex-start;
+        max-width: 400px;
+        margin-bottom: 2em;
+    }
+    .texto-final p{
+        color: white;
+        font-size: large;
+        padding: 0.5em;
+        }
+    
+     .texto-final .boton {
+        margin: 0.5em;
+    }
+    
+
+.contenedor-estampillas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: left;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    width: 500px;
+    max-width: 90vw;
+    
+}
+
+.contenedor-estampillas img {
+    max-height: 20vh;
+}
 
 .fondo-creditos {
     background: url(img/bg-cuadernillo.png) no-repeat center; 
