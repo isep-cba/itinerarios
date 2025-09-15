@@ -102,6 +102,11 @@ a:visited {
     border-color: var(--color5);
 }
 
+video {
+    width: 100%;
+    padding-bottom: 1em;
+}
+
 .video {
     width: 100%;
     padding-bottom: 2em;
@@ -135,6 +140,8 @@ audio {
     z-index: 5;
     transform: rotate(15deg);
     opacity: 0.8;
+    filter: drop-shadow(-1px -1px 1px var(--color4));
+
 }
 
 #estampilla3 {
