@@ -906,3 +906,44 @@ img.zoomed {
 .leaflet-popup-content-wrapper h1 {
     color: var(--color3);
 }
+
+#materiales {
+    background: url(img/bg-presentacion.jpg) no-repeat center; 
+    background-size: cover; 
+    background-attachment: fixed;
+    }
+
+    .maincontainer {
+        padding-top: 190px;
+        padding-bottom: 120px;
+        width: 900px;
+        max-width: 90vw;
+        margin: auto;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        height: 100%;
+        line-height: 1.5em;
+    }
+
+
+    .maincontainer h1 {
+        margin-bottom: 0.8em;
+        color: var(--color3);
+    }
+    .maincontainer h3 {
+        margin-top: 3em;
+        margin-bottom: 0.8em;
+        color: var(--color3);
+    }
+
+    .maincontainer p {
+        margin-top: 0.5em;
+    }
+
+    .maincontainer a {
+        color: var(--color2);
+    }
+
+    .maincontainer a:hover {
+        color: var(--color3);
+    }
