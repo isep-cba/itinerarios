@@ -5,7 +5,7 @@ documentacion https://leafletjs.com/reference.html
 
 var map = L.map('map', {
     crs: L.CRS.Simple,
-    minZoom: -2,
+    minZoom: -3,
     maxZoom: 0.03
 });
 
