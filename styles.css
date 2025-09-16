@@ -375,6 +375,14 @@ section {
     display: none;
 }
 
+.leaflet-bar a {
+    background-color: var(--color5) !important;
+}
+
+.leaflet-container {
+    background-color: #67475288 !important;
+}
+
 .sombra {
     filter: drop-shadow(-5px 5px 6px black);
 }
