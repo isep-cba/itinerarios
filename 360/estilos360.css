@@ -46,8 +46,14 @@ nav a:hover {
     color: white;
 }
 
+
+[draggable=true] {
+  cursor: move;
+}
+
 .media-box {
     position: absolute;
+    cursor: move;
     top: 15%;
     right: 5%;
     width: 400px;
@@ -163,3 +169,4 @@ img.zoomed {
   left: 50% !important;
   transition: transform 0.25s ease;
 }
+
